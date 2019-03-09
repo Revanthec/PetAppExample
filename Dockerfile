@@ -1,4 +1,5 @@
 FROM openjdk:8u181-jdk-alpine3.8 
+RUN apt-get install -y git
 RUN git clone https://github.com/Revanthec/PetAppExample.git
 RUN mkdir -p /usr/app
 RUN cp -R PetAppExample /usr/app/
