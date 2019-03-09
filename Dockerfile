@@ -1,6 +1,6 @@
 FROM openjdk:8u181-jdk-alpine3.8 
 RUN echo $WORKDIR
-RUN ls
+RUN /WORKDIR
 RUN apk add --no-cache curl tar bash
 ARG MAVEN_VERSION=3.3.9
 #ARG USER_HOME_DIR="/root"
