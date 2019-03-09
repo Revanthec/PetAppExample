@@ -1,5 +1,5 @@
 FROM openjdk:8u181-jdk-alpine3.8 
-RUN yum install maven
+RUN apt-get install maven
 #apt-get install maven
 #WORKDIR /home/namitha_kavi/my_build
 RUN ./mvnw -DskipTests clean install
