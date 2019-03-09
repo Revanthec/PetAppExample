@@ -1,6 +1,6 @@
 FROM openjdk:8u181-jdk-alpine3.8 
 RUN mkdir -p /usr/app
-RUN CP PetAppExample /usr/app
+RUN cp -R PetAppExample /usr/app/
 #RUN echo $WORKDIR
 #RUN ls 	/workspace/
 RUN echo $PWD
