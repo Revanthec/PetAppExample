@@ -13,7 +13,7 @@ ENTRYPOINT ["/usr/bin/mvn"]
 #RUN apt-get install maven
 #apt-get install maven
 #WORKDIR /home/namitha_kavi/my_build
-RUN cd PetAppExample
+RUN cd /workspace/PetAppExample
 RUN mvn -DskipTests clean install
 COPY target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar spring-petclinic.jar
 EXPOSE 8080
