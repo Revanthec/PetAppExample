@@ -16,6 +16,7 @@ ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 #apt-get install maven
 #WORKDIR /home/namitha_kavi/my_build
 #RUN cd /PetAppExample
+cd PetAppExample
 RUN mvn -DskipTests clean install
 COPY target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar spring-petclinic.jar
 EXPOSE 8080
